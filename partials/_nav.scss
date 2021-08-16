@@ -1,0 +1,85 @@
+nav {
+    @include gradientBackground;
+    box-shadow: 0 1rem 1rem rgba($black-color, 0.1);
+    display: grid;
+    height: 5rem;
+    place-items: center;
+    position: fixed;
+    width: 100vw;
+    z-index: 10;
+
+    .container {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+
+        ul {
+            align-items: center;
+            display: flex;
+            gap: 3rem;
+        }
+
+        // only for medium / small devices
+        button {
+            display: none;
+        }
+
+        a {
+            color: $white-color;
+            font-size: 0.9rem;
+            font-weight: 400;
+        }
+
+        .nav__logo h3 {
+            color: $white-color;
+        }
+
+    }
+}
+
+/* =============================
+        MEDIA QUERIES TABLET
+============================= */
+@media screen and (max-width:1024px) {
+    nav {
+        .container {
+            button {
+                background: transparent;
+                color: $white-color;
+                cursor: pointer;
+                display: inline-block;
+                font-size: 2rem;
+
+                &#close__nav-btn {
+                    display: none;
+                }
+            }
+
+            ul {
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 0;
+                right: 5%;
+                position: fixed;
+                top: 5rem;
+
+                li {
+                    width: 100%;
+
+                    a {
+                        background: linear-gradient($primary-color-variant, darken($primary-color-variant, 12%));
+                        border-radius: 0;
+                        color: $white-color;
+                        display: block;
+                        height: 100%;
+                        padding: 1.5rem 2rem;
+
+                        &.btn {
+                            background: $secondary-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,3 +1,13 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background: rgba($primary-color-variant, 0.1);
+    color: $dark-color;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.5;
+    user-select: none;
+}
 .container {
     margin: 0 auto;
     width: $container-lg;
@@ -35,9 +45,12 @@ section {
 }
 
 .btn-primary {
-    @include button($white-color, $primay-color);
-}1
+    @include button($white-color, $primary-color);
+}
 
+/* =============================
+        MEDIA QUERIES TABLET
+============================= */
 @media screen and (max-width:1024px) {
     .container {
         width: $container-md;
@@ -49,7 +62,9 @@ section {
         }
     }
 }
-
+/* =============================
+        MEDIA QUERIES PHONES
+============================= */
 @media screen and (max-width:600px) {
     section {
         & > p {

@@ -10,16 +10,30 @@
         <title>Responsive Hospital Site</title>
         <!-- fav icon - in website tab -->
         <link rel="shortcut icon" href="favicon.ico">
+        <!-- boxicons cdn -->
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css">
         <!-- custom CSS -->
         <link rel="stylesheet" href="./css/style.min.css">
     </head>
     <body>
-        <div class="container">
-            <section>
-                <h1>hello world</h1>
-                <button class="btn">click me</button>
-            </section>
-        </div>
+        <nav>
+            <div class="container">
+                <a href="#" class="nav__logo">
+                    <h3>BRODY</h3>
+                </a>
+
+                <ul class="nav__items">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#specialists">Specialists</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#appointment" class="btn">Make Appointment</a></li>
+                </ul>
+
+                <button id="open__nav-btn"><i class="bx bx-menu"></i></button>
+                <button id="close__nav-btn"><i class="bx bx-x"></i></button>
+            </div>
+        </nav>
         
 
         <!-- custom JavaScript -->
