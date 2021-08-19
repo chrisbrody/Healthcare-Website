@@ -6,7 +6,8 @@
         "../partials/_config.scss",
         "../partials/_mixins.scss",
         "../partials/_general.scss",
-        "../partials/_nav.scss"
+        "../partials/_nav.scss",
+        "../partials/_header.scss"
     ],
     "names": [],
     "file": "style.min.css"
