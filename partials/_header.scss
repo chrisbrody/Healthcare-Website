@@ -1,0 +1,71 @@
+header {
+    @include gradientBackground;
+    display: grid;
+    height: 100vh;
+    overflow: hidden;
+    place-items: center;
+
+    .container {
+        align-items: center;
+        display: grid;
+        gap: 8%;
+        grid-template-columns: 46% 46%;
+        justify-content: space-between;
+        margin-top: 3rem;
+
+        .header__content {
+            h1 {
+                font-size: 3.5rem;
+                font-weight: 300;
+                line-height: 1.1;
+                letter-spacing: -3px;
+            }
+
+            p {
+                color: $light-color;
+                font-size: 1.1rem;
+                margin: 1rem 0 2rem;
+            }
+        }
+    }
+}
+
+/* =============================
+        MEDIA QUERIES TABLET
+============================= */
+@media screen and (max-width:1024px) {
+    header{
+        height: 60vh;
+
+        .container {
+            gap: 1rem;
+
+            .header__content {
+                h1 {
+                    font-size: 2.2rem;
+                }
+            }
+        }
+    }
+}
+
+
+/* =============================
+        MEDIA QUERIES PHONE
+============================= */
+@media screen and (max-width:600px) {
+    header{
+        height: 100vh;
+        padding-top: 3rem;
+
+        .container {
+            grid-template-columns: 1fr;
+            text-align: center;
+
+            .header__content {
+                line-height: 1.4;
+                margin: 0.8rem 0 1.5rem;
+            }
+        }
+    }
+}
