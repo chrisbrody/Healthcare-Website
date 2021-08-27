@@ -1,8 +1,10 @@
-#testimonials {
+.swiper {
     width: $container-lg;
 
-    .container {
-        article {
+    .swiper-wrapper {
+        margin-bottom: 4rem;
+
+        .swiper-slide {
             @include gradientBackground;
 
             border-radius: 1rem;
@@ -28,15 +30,19 @@
             
         }
     }
+
+    .swiper-pagination-bullet {
+        background: $primary-color;
+    }
 }
 
 /* =============================
         MEDIA QUERIES PHONES
 ============================= */
 @media screen and (max-width:600px) {
-    #testimonials {
-        .container {
-            article {
+    .swiper {
+        .swiper-wrapper {
+            .swiper-slide {
                 padding: 1.5rem;
             }
         }
