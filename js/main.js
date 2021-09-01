@@ -25,6 +25,12 @@ if(window.innerWidth < 1024) {
     })
 }
 
+
+// change navbar style on scroll
+window.addEventListener('scroll', () => {
+    document.querySelector('nav').classList.toggle('window-scroll', window.scrollY > 100)
+})
+
 // Testimonial Section (swiper js)
 var swiper = new Swiper('.mySwiper', {
     slidesPerView: 1,
